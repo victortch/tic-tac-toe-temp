@@ -549,7 +549,7 @@ def start_human_play(states):
             print ("")
             win = check_win(game_state[-1][0])      
             if win != 0:
-                print("MACHINE WON")
+                print ("MACHINE WON")
                 break
             
             if sum(game_state[-1][0]) == 13:
@@ -663,7 +663,8 @@ except:
 ####################################################################################################
 
 start_self_play(states, 10000)
-#save_experience(states, 'experience.dat')
+save_experience(states, 'experience.dat')
 start_human_play(states)
+
 
 
